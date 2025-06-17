@@ -58,7 +58,7 @@ const AddApplicationForm: React.FC<AddApplicationFormProps> = ({ onClose, onAppl
       // Upload job description if provided
       if (files.jd) {
         const jdPath = `${Date.now()}-${files.jd.name}`
-        jdUrl = await uploadFile(files.jd, 'jds', jdPath)
+        jdUrl = await uploadFile(files.jd, 'jobdes', jdPath)
       }
 
       const applicationData = {
